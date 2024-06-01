@@ -1,5 +1,6 @@
 package com.example.lab4_ph34649
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -72,6 +73,8 @@ class MainActivity : ComponentActivity() {
                 onClick = {
                     if (userName.isNotBlank() && password.isNotBlank()) {
                         Toast.makeText(context, "Login successful", Toast.LENGTH_LONG).show()
+
+
                     } else {
                         Toast.makeText(context, "Please enter username and password", Toast.LENGTH_LONG).show()
                     }
