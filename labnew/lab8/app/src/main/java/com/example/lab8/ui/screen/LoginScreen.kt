@@ -1,5 +1,6 @@
 package com.example.kot104.ui.screen
 
+
 import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -44,7 +45,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.kot104.viewmodel.LoginViewModel
-import com.example.kot104_lab8.R
+
 
 @Composable
 fun LoginScreen(navController: NavController) {
@@ -129,10 +130,7 @@ fun LoginForm(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
-                Image(
-                    painter = painterResource(id = R.drawable.ic_launcher_foreground),
-                    contentDescription = "Logo",
-                )
+
                 Spacer(modifier = Modifier.height(20.dp))
                 UsernameField(username, onUsernameChange = { username = it })
                 PasswordField(password, onPasswordChange = { password = it })
